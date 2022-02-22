@@ -11,14 +11,17 @@
             padding-left: 10%;
             padding-right: 10%;
             font-family: 'Segoe UI', Arial;
+            font-weight: 700;
+            font-size: xx-large;
             text-align: center;
             color: white;
         }
 
         .flex-container {
             display: flex;
-            flex-wrap:  wrap;
-            justify-content: space-around;
+            /* margin: auto; */ 
+            flex-wrap:  nowrap;
+            justify-content: space-evenly;
             align-items: space-around;
             padding: 20px;
         }
@@ -33,6 +36,7 @@
 
         .h_f-blue {
             background-color: #98D1C7;
+            padding: 10px;
         }
         .aside-blue {
             background-color: #62B7B6;
@@ -51,19 +55,19 @@
 </head>
 <body>
     <div class="flex-container flex-column bg-pink">
-        <div class="h_f-blue"><h1>Header</h1></div>
+        <div class="h_f-blue">Header</div>
         <div class="flex-container flex-row">
-            <div class="aside-blue"><h1>Aside</h1></div>
+            <div class="aside-blue">Aside</div>
             <div class="article-red">
-                <div><h1>Article</h1></div>
+                <div>Article</div>
                 <div class="flex-container flex-column">
-                    <div class="image-white"><h1>Image</h1></div>
-                    <div class="image-white"><h1>Image</h1></div>
-                    <div class="image-white"><h1>Image</h1></div>
+                    <div class="image-white">Image</div>
+                    <div class="image-white">Image</div>
+                    <div class="image-white">Image</div>
                 </div>
             </div>
         </div>
-        <div class="h_f-blue"><h1>Footer</h1></div>
+        <div class="h_f-blue">Footer</div>
     </div>
 </body>
 </html>
