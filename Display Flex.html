@@ -19,12 +19,10 @@
 
         .flex-container {
             display: flex;
-            /* margin: auto; */ 
             flex-wrap:  nowrap;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: space-around;
             align-content: space-around;
-            padding: 20px;
         }
 
         .flex-row {
@@ -41,15 +39,20 @@
         }
         .aside-blue {
             background-color: #62B7B6;
+            align-self: stretch;
+            padding: 200px 100px;
         }
         .article-red {
             background-color: #FA7A7B;
         }
         .image-white {
             background-color: #D6D5D5;
+            margin: 20px;
+            padding: 50px;
         }
         .bg-pink {
             background-color: #FDAFB1;
+            padding: 20px;
         }
     </style>
 
@@ -57,11 +60,11 @@
 <body>
     <div class="flex-container flex-column bg-pink">
         <div class="h_f-blue">Header</div>
-        <div class="flex-container flex-row">
+        <div class="flex-container flex-row" style="padding: 20px 0px 20px;">
             <div class="aside-blue">Aside</div>
-            <div class="article-red">
-                <div>Article</div>
-                <div class="flex-container flex-column">
+            <div class="flex-container flex-column article-red">
+                <div style="padding-top: 250px;">Article</div>
+                <div class="flex-container flex-row">
                     <div class="image-white">Image</div>
                     <div class="image-white">Image</div>
                     <div class="image-white">Image</div>
