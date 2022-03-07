@@ -17,20 +17,40 @@
             color: white;
         }
 
-        .flex-container {
+        
+        .main-container {
             display: flex;
-            flex-wrap:  nowrap;
+            flex-flow: nowrap column;
+            justify-content: space-between;
+            align-items: space-around;
+            align-content: space-around;
+            background-color: #FDAFB1;
+            padding: 20px;
+        }
+        
+        .middle-container {
+            display: flex;
+            flex-flow: nowrap row;
             justify-content: space-between;
             align-items: space-around;
             align-content: space-around;
         }
-
-        .flex-row {
-            flex-direction: row;
+        
+        .article-container {
+            display: flex;
+            flex-flow: nowrap column;
+            justify-content: space-between;
+            align-items: space-around;
+            align-content: space-around;
+            background-color: #FA7A7B;
         }
 
-        .flex-column {
-            flex-direction: column;
+        .image-container {
+            display: flex;
+            flex-flow: nowrap row;
+            justify-content: space-between;
+            align-items: space-around;
+            align-content: space-around;
         }
 
         .h_f-blue {
@@ -41,29 +61,22 @@
             background-color: #62B7B6;
             padding: 200px 100px;
         }
-        .article-red {
-            background-color: #FA7A7B;
-        }
         .image-white {
             background-color: #D6D5D5;
             margin: 20px;
             padding: 50px;
         }
-        .bg-pink {
-            background-color: #FDAFB1;
-            padding: 20px;
-        }
     </style>
 
 </head>
 <body>
-    <div class="flex-container flex-column bg-pink">
+    <div class="main-container">
         <div class="h_f-blue">Header</div>
-        <div class="flex-container flex-row" style="padding: 20px 0px 20px;">
+        <div class="middle-container" style="padding: 20px 0px 20px;">
             <div class="aside-blue">Aside</div>
-            <div class="flex-container flex-column article-red">
+            <div class="article-container">
                 <div style="padding-top: 250px;">Article</div>
-                <div class="flex-container flex-row">
+                <div class="image-container">
                     <div class="image-white">Image</div>
                     <div class="image-white">Image</div>
                     <div class="image-white">Image</div>
