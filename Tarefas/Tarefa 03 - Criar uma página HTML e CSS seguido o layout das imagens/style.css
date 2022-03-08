@@ -104,11 +104,10 @@ text-align:center;
   
 }
 #votar:hover {
-background-color: rgb(166, 187, 189);
-padding: 8.5;
-padding-left: 16.5%;
-padding-right: 16.5%;
-
+   background-color: rgb(166, 187, 189);
+   padding: 8.5;
+   padding-left: 16.5%;
+   padding-right: 16.5%;
 }
 
 .rodapé{
