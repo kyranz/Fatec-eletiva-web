@@ -1,0 +1,10 @@
+img {
+    width: 200px;
+}
+
+button {
+    width: 200px;
+    height: 100px;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
