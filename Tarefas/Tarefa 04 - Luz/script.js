@@ -1,9 +1,6 @@
-function switch_light() {
-    var img = document.getElementById("lightbulb")
-    if (img.src.includes("Off.png")) {
-        img.src="assets/On.png"
-    }
-    else {
-        img.src="assets/Off.png"
-    }
+const estado = ["Off.png", "On.png"]
+var i = 0
+
+function teste() {
+    document.getElementById("lightbulb").src = "assets\\" + estado[++i % 2]
 }
