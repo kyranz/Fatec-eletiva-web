@@ -1,0 +1,37 @@
+input {
+    height: 20px;
+    width: fit-content;
+    padding: 8px;
+    font-size: 1.2em;
+    margin: 5px auto 5px;
+    border-radius: 8px;
+}
+
+input[type=number]:focus {
+    background-color: lightgray;
+}
+
+button {
+    background-color: lightskyblue;
+    text-align: center;
+    height: 20px;
+    width: 80px;
+    margin: 5px auto 5px;
+    border-radius: 8px;
+}
+
+button:hover {
+    
+}
+
+.container {
+    display: flex;
+    width: fit-content;
+    margin: 50px auto 50px;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center   ;
+    background-color: blanchedalmond;
+    border-radius: 8px;
+}
