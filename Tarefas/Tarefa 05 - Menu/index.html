@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Menu</title>
+  </head>
+
+  <body>
+    <main id="principal">
+      <!-- Banner e título -->
+      <header>
+        <img src="assets/img/banner.png" id="banner" />
+        <h2 id="menu-title">Menu - Faça A Sua Escolha</h2>
+      </header>
+
+      <!-- Container Prato Principal -->
+      <div class="container">
+        <div class="descricao">
+          <h3>Prato Principal</h3>
+          <p>Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</p>
+        </div>
+
+        <!-- Cards Prato Principal -->
+        <div class="cards">
+          <div class="card">
+            <img src="assets/img/bife-batata.jpg" class="images" />
+            <h4 class="dish-title">Bife com batata</h4>
+            <h3 class="price">R$ 30,00</h3>
+            <div class="counter">
+              <button class="cart-qty-minus">-</button>
+              <input class="quantity qty" value="0" id="1" name="qty"></input>
+              <button class="cart-qty-plus">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/coxa-de-frango.jpg" class="images" />
+            <h4 class="dish-title">Coxa de Frango Crocante</h4>
+            <h3 class="price">R$ 25,00</h3>
+            <div class="counter">
+              <button class="cart-qty-minus">-</button>
+              <input class="quantity qty" value="0" id="2" name="qty"></input>
+              <button class="cart-qty-plus">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/carne-de-panela.webp" class="images" />
+            <h4 class="dish-title">Carne de Panela</h4>
+            <h3 class="price">R$ 22,00</h3>
+            <div class="counter">
+              <button class="cart-qty-minus">-</button>
+              <input class="quantity qty" value="0" id="3" name="qty"></input>
+              <button class="cart-qty-plus">+</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Container Acompanhamento -->
+      <div class="container">
+        <div class="descricao">
+          <h3>Acompanhamentos</h3>
+          <p>Porções para uma pessoa.</p>
+        </div>
+
+        <!-- Cards Acompanhamento -->
+        <div class="cards">
+          <div class="card">
+            <img src="assets/img/farofa.jpg" class="images" />
+            <h4 class="dish-title">Farofa</h4>
+            <h3 class="price">R$ 10,00</h3>
+            <div class="counter">
+              <button class="cart-qty-minus">-</button>
+              <input class="quantity qty" value="0" name="qty" id="4"></input>
+              <button class="cart-qty-plus">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/salada.jpg" class="images" />
+            <h4 class="dish-title">Salada</h4>
+            <h3 class="price">R$ 8,00</h3>
+            <div class="counter">
+              <button class="cart-qty-minus">-</button>
+              <input class="quantity qty" value="0" name="qty" id="5"></input>
+              <button class="cart-qty-plus">+</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/torresmo.jpg" class="images" />
+            <h4 class="dish-title">Torresmo</h4>
+            <h3 class="price">R$ 12,00</h3>
+            <div class="counter">
+              <button class="cart-qty-minus">-</button>
+              <input class="quantity qty" value="0" name="qty" id="6"></input>
+              <button class="cart-qty-plus">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <h3>Dados Pessoais</h3>
+        <div class="inputs">
+          <div class="input">
+            <input type="text" placeholder="Digite o seu nome" id="name">
+          </div>
+
+          <div class="input">
+            <input type="text" placeholder="Digite o seu telefone" id="phone">
+          </div>
+
+          <div class="input">
+            <input type="text" placeholder="Digite o seu email">
+          </div>
+
+        </div>
+      </div>
+      <button id="btnCalc" onclick="Calc()">Calcular</button>
+    </main>
+
+  </body>
+  <script src="assets/js/jquery-3.6.0.min.js"> </script>
+  <script src="assets/js/jquery.mask.min.js"> </script>
+  <script src="scripts.js"></script>
+
+</html>
